@@ -3,7 +3,7 @@ Given an array of integers, find out whether there are two distinct indices i an
 
 一个给定的数组nums，判断该数组中是否存在这样的数对满足| nums[i] - nums[j] | <= t 且 | i - j | <= k.
 ## 题目分析
-用了两种方法，一种是直接两个for循环，时间复杂度O(n*n)；第二种是暂存一个k长度的数组，排序后检查这个数组相邻两个元素的差值是否小于t，时间复杂度O(k*n),也超时了。暂时还没想到更好的解决方案(*/ω＼*)
+用了两种方法，一种是直接两个for循环，时间复杂度O(n*n)；第二种是暂存一个k长度的数组，排序后检查这个数组相邻两个元素的差值是否小于t，时间复杂度O(k*n),也超时了。还没能想出更好的解决方案……
 ## 失败代码（python）
 ```python
 class Solution(object):
