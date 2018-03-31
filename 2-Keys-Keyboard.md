@@ -14,6 +14,9 @@ In step 1, we use Copy All operation.
 In step 2, we use Paste operation to get 'AA'.
 In step 3, we use Paste operation to get 'AAA'.
 ```
+## 题目分析
+题目的意思是给出一个“A”，每次只能完全拷贝上次的“A”字符串（是拷贝不是剪切），然后粘贴（可以多次粘贴上一次拷贝的内容）。
+这样的话dp[i]=min(dp[i],dp[j]+i/j),dp[i]为默认的走到当前步数的最小值，dp[j]+i/j,表示到达i时所有可能的最小步数，如果i是j的整数倍，那么从i->j就需要i/j次的拷贝-粘贴。
 ## Python（1211ms）
 ```python
 class Solution(object):
