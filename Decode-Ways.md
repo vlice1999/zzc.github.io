@@ -39,3 +39,32 @@ class Solution(object):
                 return 0
         return re[len(s)]
 ```
+## C++(4ms)
+```cpp
+class Solution {
+public:
+    int numDecodings(string s) {
+        vector<int> result;
+        int len=s.length(),temp=0;
+        result.push_back(1);
+        result.push_back(1);
+        if(len==0||s[0]=='0')return 0;
+        if(len==1&&s[0]!='0')return 1;
+        for(int i=2;i<=len;i++)
+        {
+            temp=atoi(s.substr(i-2,2).c_str());
+            if(10<temp && temp<=26 && temp!=20)
+                result.push_back(result[i-2]+result[i-1]);
+            else if(temp==10||temp==20)
+                result.push_back(result[i-2]);
+            else if(s[i-1]!='0')
+                result.push_back(result[i-1]);
+            else 
+                return 0;
+        }
+        return result[len];
+    }
+};
+```
+## 解题感悟
+目前看来，用了string后的C++和python的代码差不了几行，而且巨快୧(๑•̀◡•́๑)૭
