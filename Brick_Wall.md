@@ -1,3 +1,4 @@
+
 ## 题目描述
 ```
 There is a brick wall in front of you. The wall is rectangular and has several rows of bricks. The bricks have the same height but different width. You want to draw a vertical line from the top to the bottom and cross the least bricks. 
@@ -13,6 +14,7 @@ Input:
  [3,1,2],
  [1,3,1,1]]
 Output: 2
+<img src="https://raw.githubusercontent.com/vlice1999/17020021054/master/brick_wall.png">
 Note:
 The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000. 
