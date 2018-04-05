@@ -14,11 +14,13 @@ Input:
  [3,1,2],
  [1,3,1,1]]
 Output: 2
-<img src="https://raw.githubusercontent.com/vlice1999/17020021054/master/brick_wall.png">
 Note:
 The width sum of bricks in different rows are the same and won't exceed INT_MAX.
 The number of bricks in each row is in range [1,10,000]. The height of wall is in range [1,10,000]. Total number of bricks of the wall won't exceed 20,000. 
 ```
+
+<img src="https://raw.githubusercontent.com/vlice1999/17020021054/master/brick_wall.png">
+
 ## 题目分析
 这个题的的意思就是得到最小的穿墙数目，换句话说就是得到墙相等的数目（不包括最后一个墙）。看到这种题，如果用土办法就是申请一个与墙总长相等的数组，记录“间隙”的个数，当遇到总长为2^31这种情况只能呵呵了。所以，关键时刻还是要看map函数的。
 ## 解题思路
