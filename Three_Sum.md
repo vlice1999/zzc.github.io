@@ -1,4 +1,4 @@
-## 题目描述
+ ## 题目描述
 ```
 Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 
@@ -38,7 +38,7 @@ class Solution(object):
                     left+=1
         return result              
 ```
-##C++(118ms)
+## C++(118ms)
 ```cpp
 class Solution {
 public:
