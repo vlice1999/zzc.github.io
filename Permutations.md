@@ -143,6 +143,8 @@ class Solution(object):
         nums.sort()
         self.dfc(nums,[],len(nums))
         return Solution.re
-```(充分利用python的优势)
+(充分利用python的优势)
+```
+
 # 总结体会
 再看见必须遍历所有组合的题，直接回溯，哈哈。
