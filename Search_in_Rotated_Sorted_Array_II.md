@@ -69,7 +69,7 @@ public:
 ```
 ## C++(8ms)
 ```cpp
-//vector
+//for 循环
 class Solution {
 public:
     bool search(vector<int>& nums, int target) {
