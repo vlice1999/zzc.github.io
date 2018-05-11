@@ -34,7 +34,7 @@ public:
     }
 };
 ```
-##C++(127ms)
+## C++(127ms)
 ```cpp
 class Solution {
 public:
