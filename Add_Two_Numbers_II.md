@@ -12,7 +12,7 @@ Output: 7 -> 8 -> 0 -> 7
 ## 解题思路
 用deque容器写了个大数加法，然后挨个插在链表中，可以说是相当low了。
 ## C++(67ms)
-```
+```cpp
 /**
  * Definition for singly-linked list.
  * struct ListNode {
