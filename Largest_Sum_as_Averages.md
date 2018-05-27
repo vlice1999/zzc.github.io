@@ -36,3 +36,23 @@ public:
     }
 };
 ```
+## python(522ms)
+```py
+class Solution(object):
+    def largestSumOfAverages(self, A, K):
+        """
+        :type A: List[int]
+        :type K: int
+        :rtype: float
+        """
+        dp=[[0.0 for i in range(K+1)] for j in range(len(A)+1)]
+        for i in range(1,len(A)+1):
+            dp[i][1]=(A[i-1]+dp[i-1][1]*(i-1))/i
+            print dp[i][1]
+        for k in range(2,K+1):
+            for i in range(k,len(A)+1):
+                for j in range(k-1,i):
+                    dp[i][k]=max(dp[i][k],dp[j][k-1]+(dp[i][1]*i-dp[j][1]*j)/(i-j))
+        
+        return dp[len(A)][K]
+```
