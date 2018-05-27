@@ -12,19 +12,16 @@
 
 课后练习题“画家问题”的不同之处在于，是要求出最佳解决的方案，而不是猜测是否有解决方案。具体请看链接[画家问题](https://github.com/vlice1999/zzc.github.io/blob/master/paint.md)。
 
-“讨厌的青蛙”这个题的思路还是很明晰的，就是如何缩短枚举的时间有点小小的技巧，没有什么过多解释的。练习题“拨钟问题”因为实在理不大清每个按键之间的关系，所以直接暴力枚举[暴力枚举法解决拨钟问题](https://github.com/vlice1999/zzc.github.io/blob/master/bozhong.md)
+“讨厌的青蛙”这个题的思路还是很明晰的，就是如何缩短枚举的时间有点小小的技巧，没有什么过多解释的。练习题“拨钟问题”因为实在理不大清每个按键之间的关系，所以直接[暴力枚举](https://github.com/vlice1999/zzc.github.io/blob/master/bozhong.md)
 
 ### 回溯
-课件中给的是递归，不是回溯，感觉回溯理解起来更方便一些，我对于回溯的理解就是要遍历所有的可能性就直接回溯。感觉与枚举的区别就是回溯要解决的是“牵一发动全身”的问题，但递归不同于回溯，回溯只是递归的一个小分支吧。leetcode中回溯的题不是很多，可能是因为回溯比较容易理解和掌握吧。下面列举两个个我觉得比较有意思的回溯问题：
-[岛屿数量](https://github.com/vlice1999/zzc.github.io/blob/master/Number_of_Island.md)
-[朋友圈个数](https://github.com/vlice1999/zzc.github.io/blob/master/Friend_Circles.md)
+课件中给的是递归，不是回溯，感觉回溯理解起来更方便一些，我对于回溯的理解就是要遍历所有的可能性就直接回溯。感觉与枚举的区别就是回溯要解决的是“牵一发动全身”的问题，但递归不同于回溯，回溯只是递归的一个小分支吧。leetcode中回溯的题不是很多，可能是因为回溯比较容易理解和掌握吧。下面列举两个个我觉得比较有意思的回溯问题：[岛屿数量](https://github.com/vlice1999/zzc.github.io/blob/master/Number_of_Island.md)和[朋友圈个数](https://github.com/vlice1999/zzc.github.io/blob/master/Friend_Circles.md)
 
 课后练习题的第一个题是“完美覆盖”，但是我写的程序中总是会出现重复计算的情况，因为问题没有解决，就先不贴代码了。网上有用找到的规律递推出来的，我还是先考虑一下递归的解法吧。。。。
 
 ### 动态规划
-之前对于动态规划的理解就是能否用dp[i][j]=max/min(dp[i][j-1]+num[i][j],dp[i][j])类似于这样的公式解决。视频中讲的动态规划分为“人人为我”和“我为人人”的动态规划。之前做的动态规划基本都是一维的，然而视频中直接给的是二维的，可以说视频质量是相当相当好了。动态规划直观上感觉就是多个元素共同影响一个元素，这样在每个元素处都可以找出最佳的解决方案。课件中的“分区和最小”和leetcode中的“分区平均和最大”很像，所以就写了这个题的解决方案。
-[分区和最小](https://github.com/vlice1999/zzc.github.io/blob/master/best_add.md)
-[分区平均和最大](https://github.com/vlice1999/zzc.github.io/blob/master/Largest_Sum_as_Averages.md)
+之前对于动态规划的理解就是能否用dp[i][j]=max/min(dp[i][j-1]+num[i][j],dp[i][j])类似于这样的公式解决。视频中讲的动态规划分为“人人为我”和“我为人人”的动态规划。之前做的动态规划基本都是一维的，然而视频中直接给的是二维的，可以说视频质量是相当相当好了。动态规划直观上感觉就是多个元素共同影响一个元素，这样在每个元素处都可以找出最佳的解决方案。课件中的“分区和最小”和leetcode中的“分区平均和最大”很像，所以就写了这个题的解决方案：
+[分区和最小](https://github.com/vlice1999/zzc.github.io/blob/master/best_add.md)，以及leetcode的[分区平均和最大](https://github.com/vlice1999/zzc.github.io/blob/master/Largest_Sum_as_Averages.md)。
 
 ## 下周计划
 通过这周的学习发现，算法这种东西不是说想学就能学会的，需要很长时间去理解和练习，而在消化这些内容的同时，我还可以去做更多的事情。所以下周计划一边慢慢的学算法，一边学习一下Python数据库操作的一些内容。英语写作的视频接着看，掌握一下基本的东西，可能内容比较简单比较基础，但对于写作还是有帮助的。
