@@ -56,7 +56,7 @@ public:
 };
 ```
 ## C++(7ms)
-```
+```cpp
 //int
 class Solution {
 public:
