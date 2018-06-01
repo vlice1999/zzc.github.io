@@ -21,7 +21,7 @@ Input:
 return [2], since 2 happens twice, however -5 only occur once.
 Note: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
 ## 解题思路
-想多了想多了，其实和[Traingle]('https://github.com/vlice1999/zzc.github.io/blob/master/Triangle.md')是一模一样的题,其实还要简单一些，因为不需要做最优化处理。
+想多了想多了，其实和[Traingle](https://github.com/vlice1999/zzc.github.io/blob/master/Triangle.md)是一模一样的题,其实还要简单一些，因为不需要做最优化处理。
 ## C++(18ms)
 ```cpp
 /**
