@@ -35,7 +35,7 @@ public:
     }
 };
 ```
-#C++(loser)
+# C++(loser)
 ```c++
 class Solution {
 public:
@@ -76,5 +76,3 @@ public:
     }
 };
 ```
-# Summary
-My first code is wrong, then I find a correct solution's thinking is same to me but it counts by subtraction.   
