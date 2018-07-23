@@ -20,7 +20,7 @@ X X X X
 X O X X
 ```
 # Solution
-My thinking is to build a new int "numboard"(int) first, then iterates through "board".If board[i][j] is "X", the numboard[i][j] is "1", otherwise, it is zero.
+My thinking is to build a new "numboard"(int array) first, then iterates through "board".If board[i][j] is "X", the numboard[i][j] is "1", otherwise, it is zero.
 
 
 Then use dfs to iterates through the board boundary. If board[i][j] is "O", we begin foreach, and numboard[i][j] is "-1".
