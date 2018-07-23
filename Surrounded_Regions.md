@@ -1,8 +1,10 @@
 # Description
 Given a 2D board containing 'X' and 'O' (the letter O), capture all regions surrounded by 'X'.
-\\
+
+
 A region is captured by flipping all 'O's into 'X's in that surrounded region.
-\\
+
+
 Example:
 ```
 X X X X
@@ -18,10 +20,15 @@ X X X X
 X O X X
 ```
 # Solution
-My thinking is to build a new int "numboard"(int) first, then iterates through "board".If board[i][j] is "X", the numboard[i][j] is "1", otherwise, it is zero.\\
-Then use dfs to iterates through the board boundary. If board[i][j] is "O", we begin foreach, and numboard[i][j] is "-1".\\
+My thinking is to build a new int "numboard"(int) first, then iterates through "board".If board[i][j] is "X", the numboard[i][j] is "1", otherwise, it is zero.
+
+
+Then use dfs to iterates through the board boundary. If board[i][j] is "O", we begin foreach, and numboard[i][j] is "-1".
+
+
 Last, iterates through the "numboard", and if numboard[i][j] is zero, board[i][j] is "X".
 # C++(12ms)
+```c++
 class Solution {
 public:
     void solve(vector<vector<char>>& board) {
@@ -59,3 +66,4 @@ public:
             dfs(board,i,j+1,row,col);
     }
 };
+```
