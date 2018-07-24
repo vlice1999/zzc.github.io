@@ -14,8 +14,9 @@ Note:
 If there exists a solution, it is guaranteed to be unique.
 Both input arrays are non-empty and have the same length.
 Each element in the input arrays is a non-negative integer.
+```
 Example 1:
-'''
+
 Input: 
 gas  = [1,2,3,4,5]
 cost = [3,4,5,1,2]
@@ -45,7 +46,7 @@ Travel to station 0. Your tank = 4 - 3 + 2 = 3
 Travel to station 1. Your tank = 3 - 3 + 3 = 3
 You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
 Therefore, you can't travel around the circuit once no matter where you start.
-'''
+```
 # Solution
 My thinking is to calculate car's remaining gas first. If sum of all the remaining is nagetive, return -1.
 
