@@ -8,7 +8,7 @@ Output: 1->2->3->4->5
 ```
 # Solution
 A easy and old problem, and the only difficulty is to process the last node. 
-# C++()
+# C++(16ms)
 ```c++
 /**
  * Definition for singly-linked list.
