@@ -1,4 +1,4 @@
-# Description
+And# Description
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 Example 1:
 ```
@@ -25,7 +25,7 @@ Output: false
 Explanation: S becomes "c" while T becomes "b".
 ```
 # Solution
-My solution is easy to understand. First, I record the length of string S and string T. Then, if I get a `#` when I find every letter in strings, I will delete it.
+My solution is easy to understand. First, I record the length of string S and string T. Then, if I get a `#` when I find every letter in strings, I will delete it. At last, judge if the string T is equal to string S.
 # C++(0ms)
 ```cpp
 class Solution {
